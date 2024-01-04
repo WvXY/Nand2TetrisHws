@@ -1,0 +1,10 @@
+CHIP Test{
+    IN in[16];
+
+    OUT out[16],
+        out0;
+
+    PARTS:
+    Not16(in=in, out=o);
+    Not16(in=o, out=out, out[0]=out0);
+}
